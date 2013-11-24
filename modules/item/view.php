@@ -29,7 +29,7 @@ $col .= "atk AS attack";
 if ($server->isRenewal) {
 	$col .= ", equip_level_min, equip_level_max, matk";
 } else {
-	$col .= ", equip_level AS equip_level_min";
+	$col .= ", equip_level_min AS equip_level_min";
 }
 
 $sql  = "SELECT $col FROM {$server->charMapDatabase}.items ";
